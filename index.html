@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link rel="shortcut icon" href="src/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="src/styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body
+  class="bg-gradient-to-b from-softViolet to-softBlue min-h-screen text-[18px] font-KumbhSans flex flex-col justify-center p-6">
+
+  <main
+    class="bg-white rounded-[24px] pl-8 pr-8 pb-12 shadow-2xl md:py-20 md:px-28 md:flex md:w-auto md:mx-auto md:gap-8 relative">
+    <img src="src/images/illustration-box-desktop.svg" alt="" class="absolute top-44 left-[-110px] z-10 md:block hidden">
+    <div class="md:w-1/2 md:overflow-hidden md:-left-28 md:relative">
+      <div class="relative -top-[108px] left-2 h-36 w-fit md:hidden"> <!-- mobile -->
+        <img src="src/images/illustration-woman-online-mobile.svg" alt="illustration-woman-online-mobile">
+        <img src="src/images/bg-pattern-mobile.svg" alt="bg-pattern-mobile" class="relative top-[-70px]">
+      </div>
+      <div class="hidden md:block"> <!-- desktop img -->
+        <div class="flex flex-col justify-center items-center">
+          <img src="src/images/illustration-woman-online-desktop.svg" alt="" class="relative -left-14 top-4">
+        </div>
+      </div>
+    </div>
+    <div class="md:w-1/2 md:m-auto">
+      <h1 class="text-veryDarkDesaturatedBlue mb-4 font-bold text-4xl text-center md:text-start">FAQ</h1>
+      <div class="first:mt-0 last:mb-0">
+        <div class="text-[13px] flex flex-col pt-4 pb-4 border-b-[1px] border-b-lightGrayishBlue">
+          <input type="checkbox" id="input1" class="peer absolute top-[-9999px]">
+          <label for="input1"
+            class="text-veryDarkDesaturatedBlue hover:text-softRed cursor-pointer peer-checked:font-semibold flex justify-between">How
+            many team members can I invite?<span class="after:content-arrowDownIcon "></span></label>
+        </div>
+        <div class="text-[13px] flex flex-col pt-4 pb-4 border-b-[1px] border-b-lightGrayishBlue">
+          <input type="checkbox" id="input2" class="peer absolute top-[-9999px]">
+          <label for="input2"
+            class="text-veryDarkDesaturatedBlue hover:text-softRed cursor-pointer peer-checked:font-semibold flex justify-between">What
+            is the maximum file upload size?<span class="after:content-arrowDownIcon"></span></label>
+          <p class="text-[12px] text-darkGrayishBlue hidden peer-checked:block mt-2 md:w-2/3">No more than 2GB. All files in your
+            account must fit your allotted storage space.</p>
+        </div>
+        <div class="text-[13px] flex flex-col pt-4 pb-4 border-b-[1px] border-b-lightGrayishBlue">
+          <input type="checkbox" id="input3" class="peer absolute top-[-9999px]">
+          <label for="input3"
+            class="text-veryDarkDesaturatedBlue hover:text-softRed cursor-pointer peer-checked:font-semibold flex justify-between">How
+            do I reset my password?<span class="after:content-arrowDownIcon"></span></label>
+        </div>
+        <div class="text-[13px] flex flex-col pt-4 pb-4 border-b-[1px] border-b-lightGrayishBlue">
+          <input type="checkbox" id="input4" class="peer absolute top-[-9999px]">
+          <label for="input4"
+            class="text-veryDarkDesaturatedBlue hover:text-softRed cursor-pointer peer-checked:font-semibold flex justify-between">Can
+            I cancel my subscription?<span class="after:content-arrowDownIcon"></span></label>
+        </div>
+        <div class="text-[13px] flex flex-col pt-4 pb-4 border-b-[1px] border-b-lightGrayishBlue">
+          <input type="checkbox" id="input5" class="peer absolute top-[-9999px]">
+          <label for="input5"
+            class="text-veryDarkDesaturatedBlue hover:text-softRed cursor-pointer peer-checked:font-semibold flex justify-between">Do
+            you provide additional support?<span class="after:content-arrowDownIcon"></span></label>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
